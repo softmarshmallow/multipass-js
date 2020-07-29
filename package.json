@@ -1,0 +1,28 @@
+{
+  "name": "multipass-js",
+  "version": "0.1.4",
+  "description": "a shopify multipass url generator",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/softmarshmallow/multipassjs.git",
+  "author": "softmarshmallow <woojoo@softmarshmallow.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "example": "ts-node lib/example.ts",
+    "prepublish": "tsc"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.8.3"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "tsconfig.json",
+    "dist/"
+  ]
+}
