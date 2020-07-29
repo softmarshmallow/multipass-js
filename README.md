@@ -8,6 +8,7 @@ a shopify multipass url generator
 
 ## usages
 ``` typescript
+import { Multipass } from "multipass-js"
 const multipass = new Multipass(SHOPIFY_STORE_MULTIPASS_SECRET);
 
 // Create your customer data hash
