@@ -4,7 +4,7 @@
   "description": "a shopify multipass url generator",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "repository": "https://github.com/softmarshmallow/multipassjs.git",
+  "repository": "https://github.com/softmarshmallow/multipass-js.git",
   "author": "softmarshmallow <woojoo@softmarshmallow.com>",
   "license": "MIT",
   "private": false,

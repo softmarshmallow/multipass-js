@@ -1,7 +1,12 @@
-# multipassjs
+# multipass-js
 a shopify multipass url generator
 
+## installation
 
+`yarn add multipass-js`
+
+
+## usages
 ``` typescript
 const multipass = new Multipass(SHOPIFY_STORE_MULTIPASS_SECRET);
 
