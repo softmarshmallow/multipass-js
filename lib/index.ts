@@ -18,7 +18,7 @@ class Multipass{
     _signingKey: Buffer
 
     customer: any
-    doamin: string
+    domain: string
     redirect?: string
 
     constructor(secret){
@@ -43,7 +43,7 @@ class Multipass{
 
     withDomain(domain: string): Multipass{
         // todo add domain validation. check if domain contains http://, if so, normalize it
-        this.doamin = domain;
+        this.domain = domain;
         return this;
     }
 
@@ -53,10 +53,10 @@ class Multipass{
     }
     
     url() {
-        if(!this.doamin){
+        if(!this.domain){
             throw new Error("cannot generate url. you did not provided any domain information")
         }
-        return "https://" + this.doamin + "/account/login/multipass/" + this.encode(this.customer);
+        return "https://" + this.domain + "/account/login/multipass/" + this.encode(this.customer);
     };
 
     private encode(obj){
