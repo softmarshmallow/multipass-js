@@ -34,7 +34,7 @@ const customerData = {
 };
 
 
-const url = multipass.withCustomerData(customerData).withdomain("mystore.shopify.com").withRedirect("products/primary").url();
+const url = multipass.withCustomerData(customerData).withDomain("mystore.shopify.com").withRedirect("products/primary").url();
 
 // client may access shopify with `url`
 // will give you URL like:  https://store.myshopify.com/account/login/multipass/<MULTIPASS-TOKEN>
