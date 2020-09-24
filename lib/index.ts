@@ -65,6 +65,13 @@ class Multipass {
 
     }
 
+    token(): string {
+        if (!this.customer) {
+            throw new Error("cannot generate url. you did not provided any customer information");
+        }
+        return this.encode(this.customer) as string;
+    }
+
     private encode(obj: IMultipassCustomerData): string | undefined {
         if (!obj) return;
 

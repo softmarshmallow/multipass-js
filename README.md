@@ -1,5 +1,5 @@
 # multipass-js
-a typesafe shopify multipass url generator, written in 100 pure typescript
+a typesafe shopify multipass token generator, written in 100 pure typescript
 
 > [Shopify](http://shopify.com) provides a mechanism for single sign-on known as Multipass.  Multipass uses an AES encrypted JSON hash and multipassify provides functions for generating tokens
 
@@ -40,6 +40,8 @@ const url = multipass.withCustomerData(customerData).withDomain("mystore.shopify
 // will give you URL like:  https://store.myshopify.com/account/login/multipass/<MULTIPASS-TOKEN>
 // with optional redirection
 
+// Generate token
+const token = multipass.withCustomerData(customerData).token();
 ```
 
 

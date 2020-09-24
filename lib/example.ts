@@ -11,3 +11,5 @@ multipass.withCustomerData({
 const url = multipass.url();
 
 console.log(url)
+
+console.log(multipass.token())
