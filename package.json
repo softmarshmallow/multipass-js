@@ -10,9 +10,7 @@
   "private": false,
   "scripts": {
     "example": "ts-node lib/example.ts",
-    "prepublish": "tsc"
-  },
-  "dependencies": {
+    "prepack": "tsc"
   },
   "devDependencies": {
     "@types/node": "^14.0.27",
