@@ -25,7 +25,7 @@ import { Multipass } from "multipass-js"
 const multipass = new Multipass(SHOPIFY_STORE_MULTIPASS_SECRET);
 
 // Create your customer data hash
-const email = `woojoo@softmarshmallow.com`
+const email = `universe@grida.co`
 const customerData = {
     email: email,
     user: "your database user id",
@@ -52,3 +52,6 @@ const token = multipass.withCustomerData(customerData).token();
 ## Shopify docs
 https://shopify.dev/docs/admin-api/rest/reference/plus/multipass
 
+
+## Todo
+- [support webpack5](https://github.com/softmarshmallow/multipass-js/issues/5)
